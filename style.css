@@ -1,0 +1,116 @@
+ 
+body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f5f7fa;  
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+
+ 
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;  
+    padding: 30px;
+    border-radius: 15px;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+ 
+h1 {
+    text-align: center;
+    color: #2d3436; 
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+ 
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap;  
+    margin: 20px 0;
+}
+
+ 
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    background-color: #6c5ce7;  
+    color: white;
+    transition: transform 0.1s, background-color 0.3s;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+ 
+button:hover {
+    background-color: #a29bfe;  
+    transform: scale(1.05); 
+}
+
+ 
+.mood-display {
+    margin-top: 30px;
+}
+
+ 
+h2 {
+    text-align: center; 
+    color: #2d3436;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+ 
+#moodList {
+    padding: 10px;
+    background-color: #f8f9fa;  
+    border-radius: 10px;
+    max-height: 300px;  
+    overflow-y: auto; 
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;  
+}
+
+ 
+#moodList p {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff;  
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);  
+    font-size: 16px;
+    color: #2d3436;
+    width: fit-content;  
+    text-align: center;  
+}
+
+ 
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;  
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

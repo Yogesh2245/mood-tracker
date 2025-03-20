@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Mood Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        
+        <!-- Mood selection area -->
+        <div class="mood-buttons">
+            <button onclick="saveMood('😊')">Happy 😊</button>
+            <button onclick="saveMood('😢')">Sad 😢</button>
+            <button onclick="saveMood('😐')">Neutral 😐</button>
+            <button onclick="saveMood('😃')">Excited 😃</button>
+        </div>
+
+        <!-- Display area for moods -->
+        <div class="mood-display">
+            <h2>Mood Timeline</h2>
+            <div id="moodList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
